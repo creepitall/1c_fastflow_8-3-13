@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.7">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаГоризонт" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВерт1" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа верт1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа верт1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВерт1РасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<InputField name="МаскаСтроки" id="1">
+							<DataPath>МаскаСтроки</DataPath>
+							<Width>80</Width>
+							<ContextMenu name="МаскаСтрокиКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="МаскаСтрокиРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<TextDocumentField name="Строка" id="4">
+							<DataPath>Строки</DataPath>
+							<ContextMenu name="СтрокаКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="СтрокаРасширеннаяПодсказка" id="6"/>
+						</TextDocumentField>
+						<Table name="ТЗРегулярки" id="36">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТЗРегулярки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЗРегуляркиКонтекстноеМеню" id="37"/>
+							<AutoCommandBar name="ТЗРегуляркиКоманднаяПанель" id="38">
+								<ChildItems>
+									<Button name="ТЗПараметрыПрочитатьСтроку" id="34">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрочитатьСтроку</CommandName>
+										<ExtendedTooltip name="ТЗПараметрыПрочитатьСтрокуРасширеннаяПодсказка" id="35"/>
+									</Button>
+									<Button name="ТЗРегуляркиЗаполнитьПараметры" id="66">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьПараметры</CommandName>
+										<ExtendedTooltip name="ТЗРегуляркиЗаполнитьПараметрыРасширеннаяПодсказка" id="67"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТЗРегуляркиРасширеннаяПодсказка" id="39"/>
+							<SearchStringAddition name="ТЗРегуляркиСтрокаПоиска" id="40">
+								<AdditionSource>
+									<Item>ТЗРегулярки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗРегуляркиСтрокаПоискаКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="ТЗРегуляркиСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЗРегуляркиСостояниеПросмотра" id="43">
+								<AdditionSource>
+									<Item>ТЗРегулярки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗРегуляркиСостояниеПросмотраКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ТЗРегуляркиСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЗРегуляркиУправлениеПоиском" id="46">
+								<AdditionSource>
+									<Item>ТЗРегулярки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗРегуляркиУправлениеПоискомКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ТЗРегуляркиУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТЗРегуляркиВыражение" id="49">
+									<DataPath>ТЗРегулярки.Выражение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗРегуляркиВыражениеКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ТЗРегуляркиВыражениеРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="ТЗРегуляркиВид" id="58">
+									<DataPath>ТЗРегулярки.Вид</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗРегуляркиВидКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТЗРегуляркиВидРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ТЗРегуляркиПозицияНачальная" id="52">
+									<DataPath>ТЗРегулярки.ПозицияНачальная</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗРегуляркиПозицияНачальнаяКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ТЗРегуляркиПозицияНачальнаяРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ТЗРегуляркиПозицияКонечная" id="55">
+									<DataPath>ТЗРегулярки.ПозицияКонечная</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗРегуляркиПозицияКонечнаяКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ТЗРегуляркиПозицияКонечнаяРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ТЗРегуляркиТЗДляОбращения" id="63">
+									<DataPath>ТЗРегулярки.ТЗДляОбращения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗРегуляркиТЗДляОбращенияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ТЗРегуляркиТЗДляОбращенияРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВерт2" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа верт2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа верт2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВерт2РасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<Pages name="ВкладкиДанных" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вкладки данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вкладки данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ВкладкиДанныхРасширеннаяПодсказка" id="30"/>
+							<ChildItems>
+								<Page name="Группа1" id="61">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ТЗ_Параметры</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="62"/>
+									<ChildItems>
+										<Table name="ТЗПараметры" id="7">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ТЗПараметры</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ТЗПараметрыКонтекстноеМеню" id="8"/>
+											<AutoCommandBar name="ТЗПараметрыКоманднаяПанель" id="9"/>
+											<ExtendedTooltip name="ТЗПараметрыРасширеннаяПодсказка" id="10"/>
+											<SearchStringAddition name="ТЗПараметрыСтрокаПоиска" id="11">
+												<AdditionSource>
+													<Item>ТЗПараметры</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТЗПараметрыСтрокаПоискаКонтекстноеМеню" id="12"/>
+												<ExtendedTooltip name="ТЗПараметрыСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТЗПараметрыСостояниеПросмотра" id="14">
+												<AdditionSource>
+													<Item>ТЗПараметры</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТЗПараметрыСостояниеПросмотраКонтекстноеМеню" id="15"/>
+												<ExtendedTooltip name="ТЗПараметрыСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТЗПараметрыУправлениеПоиском" id="17">
+												<AdditionSource>
+													<Item>ТЗПараметры</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТЗПараметрыУправлениеПоискомКонтекстноеМеню" id="18"/>
+												<ExtendedTooltip name="ТЗПараметрыУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ТЗПараметрыИмяПараметра" id="20">
+													<DataPath>ТЗПараметры.ИмяПараметра</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТЗПараметрыИмяПараметраКонтекстноеМеню" id="21"/>
+													<ExtendedTooltip name="ТЗПараметрыИмяПараметраРасширеннаяПодсказка" id="22"/>
+												</InputField>
+												<InputField name="ТЗПараметрыЗначение" id="31">
+													<DataPath>ТЗПараметры.Значение</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ТЗПараметрыЗначениеКонтекстноеМеню" id="32"/>
+													<ExtendedTooltip name="ТЗПараметрыЗначениеРасширеннаяПодсказка" id="33"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РегулярныеВыражения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Строки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>256</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаскаСтроки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маска строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>256</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗПараметры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗПараметры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяПараметра" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТЗРегулярки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗРегулярки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Выражение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выражение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПозицияНачальная" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Позиция начальная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПозицияКонечная" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Позиция конечная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вид" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЗДляОбращения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЗДля обращения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьСтроку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать строку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать строку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьСтроку</Action>
+		</Command>
+		<Command name="ЗаполнитьПараметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПараметры</Action>
+		</Command>
+	</Commands>
+</Form>
